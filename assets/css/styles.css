@@ -1,19 +1,72 @@
-/* Google Translate Widget Styling */
+/* Body */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F7FA;
+  color: #1A1A1A;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.5);
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Service Cards */
+.service-card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Gallery Images */
+.gallery img {
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Google Translate Widget */
 #google_translate_element {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 9999;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
 }
-
-.goog-te-gadget {
-    font-family: 'Inter', sans-serif !important;
-}
-
 .goog-te-gadget select {
-    padding: 6px 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    background: white;
-    font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
+
+/* Footer */
+footer {
+  background: #1A355B;
+}
+
